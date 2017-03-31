@@ -3,9 +3,10 @@ Object-C Class for executing Apple Script from your application
 
 Usage example:
 
+
+#import "ASInsert.h"
+
 -(void) TestIt {
-    
-    [self setOutput: @"Waiting for script to finish..."];
     
     NSString* sourceScript =  @"on TESTFUNCTION1(arg1, arg2, arg3)\n\
                                     delay 2\n\

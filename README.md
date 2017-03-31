@@ -20,11 +20,10 @@ Usage example:
                    withArguments: args
                         andBlock: ^(NSAppleEventDescriptor* resultDesc) {
                     
-                     // Process results
-                     NSLog( @"%@", resultDesc );
+                     // Process results here...
                      if( resultDesc )
-                         [self setOutput: [NSString stringWithFormat: @"%@\n%@", self.output, resultDesc.description] ];
+                         NSLog( @"%@", resultDesc );
                      else
-                         [self setOutput: [NSString stringWithFormat: @"%@\n%@", self.output, insert.lastErrorInfo.description] ];
+                         NSLog( @"%@", insert.lastErrorInfo.description );
                     }];
 }

@@ -3,10 +3,11 @@ Object-C Class for executing Apple Script from your application
 
 Usage example:
 
-
+```objc
 #import "ASInsert.h"
 
--(void) TestIt {
+-(void) TestIt
+{
     
     NSString* sourceScript =  @"on TESTFUNCTION1(arg1, arg2, arg3)\n\
                                     delay 2\n\
@@ -28,3 +29,4 @@ Usage example:
                          NSLog( @"%@", insert.lastErrorInfo.description );
                     }];
 }
+```

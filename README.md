@@ -16,7 +16,7 @@ Usage example:
                                 end TESTFUNCTION1\n";
     ASInsert* insert = [[ASInsert alloc] initWithScriptSource: sourceScript ];
     
-    // Execute both script functions at the same time, async
+    // Execute function TESTFUNCTION1 in the above script (sourceScript) and return immediately
     NSArray* args = @[ @"Argument 1",  @"Argument 2",  @"Argument 3" ];
     [insert executeFunctionASync: @"TESTFUNCTION1"
                    withArguments: args
